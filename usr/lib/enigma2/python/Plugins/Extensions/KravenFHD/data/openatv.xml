@@ -205,6 +205,20 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/2))
     <!--<text="SoftwarePanel" position="105,0" />-->
   </screen>
   <!-- SoftcamPanel -->
+  <screen name="SoftcamSetup" position="0,0" size="1920,1080" title="SoftcamSetup" flags="wfNoBorder" backgroundColor="transparent">
+    <widget backgroundColor="Kravenbg" name="config" font="Regular;30" position="105,189" size="750,150" enableWrapAround="1" foregroundColor="KravenFont1" transparent="1" />
+    <widget font="Regular2;33" name="enigma2" position="886,246" size="277,37" transparent="1" backgroundColor="Kravenbg" foregroundColor="KravenFont2" />
+    <widget font="Regular;30" name="info" position="125,462" size="1062,450" foregroundColor="KravenFont1" backgroundColor="Kravenbg" transparent="1" />
+    <constant-widget name="Title-big2"/>
+	<!-- Logo -->
+	<constant-widget name="Background"/>
+	<constant-widget name="Colorbuttons"/>
+	<constant-widget name="SourceRedGreenYellowBlue"/>
+	<constant-widget name="Exit"/>
+	<!--<text="SoftcamPanel" position="105,0" />-->
+  </screen>
+  <!-- ShowSoftcamPanelExtensions -->
+  <!-- SoftcamPanel -->
   <screen name="SoftcamPanel" position="0,0" size="1920,1080" title="SoftcamPanel" flags="wfNoBorder" backgroundColor="transparent">
     <widget backgroundColor="Kravenbg" name="config" font="Regular;30" position="105,189" size="750,150" enableWrapAround="1" foregroundColor="KravenFont1" transparent="1" />
     <widget font="Regular2;33" name="enigma2" position="886,246" size="277,37" transparent="1" backgroundColor="Kravenbg" foregroundColor="KravenFont2" />
@@ -926,20 +940,10 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/2))
     <constant-widget name="Exit"/>
     <!--<text="CronTimers" position="105,0" />-->
   </screen>
-  <!-- doFlashImage -->
-  <screen name="doFlashImage" position="0,0" size="1920,1080" title="doFlashImage" flags="wfNoBorder" backgroundColor="transparent">
-    <widget backgroundColor="Kravenbg3" name="imageList" font="Regular;32" foregroundColor="KravenFont1" itemHeight="45" position="105,120" size="1062,810" scrollbarMode="showOnDemand" valign="top" transparent="1" />
-    <constant-widget name="Title-big"/>
-	<!-- Logo -->
-    <constant-widget name="Colorbuttons"/>
-    <constant-widget name="SourceRedGreenYellowBlue"/>
-    <constant-widget name="Exit"/>
-    <!--<text="doFlashImage" position="105,0" />-->
-  </screen>
   <!-- FlashOnline -->
   <screen name="FlashOnline" position="0,0" size="1920,1080" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="info-online" position="105,120" zPosition="1" size="1062,369" font="Regular;32" foregroundColor="KravenFont1" halign="left" valign="top" transparent="1" backgroundColor="Kravenbg3" />
-    <widget name="info-local" position="105,510" zPosition="1" size="1062,369" font="Regular;32" foregroundColor="KravenFont1" halign="left" valign="top" transparent="1" backgroundColor="Kravenbg3" />
+    <widget backgroundColor="Kravenbg3" name="list" position="105,120" size="1062,675" foregroundColor="KravenFont1" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+    <widget backgroundColor="Kravenbg3" name="description" position="105,825" size="1062,82" foregroundColor="KravenFont2" font="Regular2;32" valign="center" halign="center" zPosition="2" transparent="1" />
     <constant-widget name="Title-big"/>
 	<!-- Logo -->
     <constant-widget name="Colorbuttons"/>
