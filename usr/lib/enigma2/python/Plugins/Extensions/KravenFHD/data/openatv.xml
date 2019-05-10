@@ -1133,12 +1133,12 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/2))
   </screen>
   <!-- ImageBackup -->
   <screen name="ImageBackup" position="0,0" size="1920,1080" title="Image Backup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="info-hdd" position="105,120" zPosition="1" size="1062,225" font="Regular;33" foregroundColor="KravenFont1" halign="left" valign="top" transparent="1" backgroundColor="Kravenbg3" />
-    <widget name="info-usb" position="105,367" zPosition="1" size="1062,495" font="Regular;33" foregroundColor="KravenFont1" halign="left" valign="top" transparent="1" backgroundColor="Kravenbg3" />
+    <widget source="description" render="Label" position="105,120" size="1062,220" font="Regular;33" foregroundColor="KravenFont1" transparent="1" backgroundColor="Kravenbg3" />
+    <widget name="config" position="105,360" size="1062,550" font="Regular;33" foregroundColor="KravenFont1" scrollbarMode="showOnDemand" transparent="1" backgroundColor="Kravenbg3" />
     <constant-widget name="Title-big"/>
 	<!-- Logo -->
     <constant-widget name="Colorbuttons"/>
-    <constant-widget name="SourceRedGreenYellowBlue"/>
+    <constant-widget name="SourceRedGreen"/>
     <constant-widget name="Exit"/>
     <!--<text="ImageBackup" position="105,0" />-->
   </screen>
