@@ -2245,4 +2245,98 @@
     <constant-widget name="OKExit"/>
     <!--<text="PathSelectionScreen" position="105,0" />-->
   </screen>
+  <!-- ChromiumOSWindow -->
+  <screen name="ChromiumOSWindow" position="0,0" size="1920,1080" title="Start ChromiumOS" flags="wfNoBorder" backgroundColor="transparent">
+  <widget source="Title" render="Label" position="105,18" size="1500,69" backgroundColor="KravenIBbg3" font="Regular2;51" foregroundColor="KravenMFont2" halign="left" valign="center" transparent="1" />
+    <widget name="config" position="105,120" size="1062,675" itemHeight="45" font="Regular;32" secondfont="Regular;28" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" enableWrapAround="1" backgroundColor="KravenIBbg3" transparent="1" />
+    <widget name="startdesc" position="105,185" size="1200,50" font="Regular;32" valign="center" halign="left" transparent="1" backgroundColor="background" />
+    <widget name="settingdesc" position="105,240" size="1200,50" font="Regular;32" valign="center" halign="left" transparent="1" backgroundColor="background" />
+	<constant-widget name="Title-big"/>
+	<!-- Logo -->    
+    <widget font="Regular;30" halign="left" valign="center" source="key_yellow" position="855,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <widget font="Regular;30" halign="left" valign="center" source="key_blue" position="1230,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />    <constant-widget name="OKExit"/>
+    <constant-widget name="Colorbuttons"/>
+    <eLabel font="Regular;30" halign="left" valign="center" text="Cancel" position="105,997" size="330,39" backgroundColor="KravenIBbg3" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <eLabel font="Regular;30" halign="left" valign="center" text="OK" position="480,997" size="330,39" backgroundColor="KravenIBbg3" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <constant-widget name="Exit"/>
+  <!--<text="ChromiumOSWindow" position="105,0" />-->
+  </screen>
+  <!-- ChromiumOSSettings -->  
+  <screen name="ChromiumOSSettings" position="0,0" size="1920,1080" title="ChromiumOS Settings" flags="wfNoBorder" backgroundColor="transparent">
+  <widget source="Title" render="Label" position="105,18" size="1500,69" backgroundColor="KravenIBbg3" font="Regular2;51" foregroundColor="KravenMFont2" halign="left" valign="center" transparent="1" />
+    <widget name="config" position="105,120" size="1062,675" itemHeight="45" font="Regular;32" secondfont="Regular;28" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" enableWrapAround="1" backgroundColor="KravenIBbg3" transparent="1" />
+    <constant-widget name="Title-big"/>
+	<!-- Logo -->
+    <widget font="Regular;30" halign="left" valign="center" source="key_red" position="855,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <widget font="Regular;30" halign="left" valign="center" source="key_green" position="1230,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <constant-widget name="OKExit"/>
+    <constant-widget name="Colorbuttons"/>
+  <!--<text="ChromiumOSSettings" position="105,0" />-->
+  </screen>
+  <!-- ChromiumOSHelpWindow -->  
+  <screen name="ChromiumOSHelpWindow" position="0,0" size="1920,1080" title="ChromiumOS Help" flags="wfNoBorder" backgroundColor="transparent">
+  <widget source="Title" render="Label" position="105,18" size="1500,69" backgroundColor="KravenIBbg3" font="Regular2;51" foregroundColor="KravenMFont2" halign="left" valign="center" transparent="1" />
+	<!-- Logo -->
+    <constant-widget name="Colorbuttons"/>
+    <widget font="Regular;30" halign="left" valign="center" source="key_red" position="105,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <widget font="Regular;30" halign="left" valign="center" source="key_green" position="480,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <widget font="Regular;30" halign="left" valign="center" source="key_yellow" position="855,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <widget font="Regular;30" halign="left" valign="center" source="key_blue" position="1230,997" size="330,39" render="Label" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+    <constant-widget name="OKExit"/>
+    <!--<text="ChromiumOSHelpWindow" position="105,0" />-->
+  </screen>
+  <!-- FileCommanderScreen -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="FileCommanderScreen" position="0,0" size="1920,1080">
+		<widget source="Title" render="Label" position="105,18" size="1500,69" backgroundColor="KravenIBbg2" font="Regular2;51" foregroundColor="KravenMFont2" transparent="1" halign="left" valign="center" />
+		<widget backgroundColor="Kravenbg" name="list_left" font="Regular;32" foregroundColor="KravenFont1" itemHeight="45" position="105,255" size="848,675" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+		<widget backgroundColor="Kravenbg" name="list_left_head1" foregroundColor="KravenFont2" position="105,135" size="848,75" font="Regular;32" transparent="1" />
+		<widget backgroundColor="Kravenbg2" source="list_left_head2" render="Listbox" position="105,213" size="848,45" foregroundColor="KravenFont2" selectionDisabled="1" transparent="1" >
+		<convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryText(pos = (30, 0), size = (150, 45), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+				MultiContentEntryText(pos = (210, 0), size = (180, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
+				MultiContentEntryText(pos = (450, 0), size = (368, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 13), # index 13 is the modification time
+				],
+				"fonts": [gFont("Regular", 28)],
+				"itemHeight": 45,
+				"selectionEnabled": False
+			}
+		</convert>
+		</widget>
+		<eLabel position="105,210" size="1710,2" backgroundColor="KravenLine" />
+		<eLabel position="105,248" size="1710,2" backgroundColor="KravenLine" />
+		<eLabel position="960,210" size="2,720" backgroundColor="KravenLine" />
+		<widget backgroundColor="Kravenbg" name="list_right" font="Regular;32" foregroundColor="KravenFont1" itemHeight="45" position="968,255" size="848,675" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+        	<widget backgroundColor="Kravenbg" name="list_right_head1" foregroundColor="KravenFont2" position="957,135" size="848,75" font="Regular;32" transparent="1" />
+		<widget backgroundColor="Kravenbg" source="list_right_head2" render="Listbox" position="968,213" size="848,45" foregroundColor="KravenFont2" selectionDisabled="1" transparent="1" >
+		<convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryText(pos = (30, 0), size = (150, 45), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+				MultiContentEntryText(pos = (210, 0), size = (180, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
+				MultiContentEntryText(pos = (450, 0), size = (368, 45), font = 0, flags = RT_HALIGN_RIGHT, text = 13), # index 13 is the modification time
+				],
+				"fonts": [gFont("Regular", 28)],
+				"itemHeight": 45,
+				"selectionEnabled": False
+			}
+		</convert>
+		</widget>
+		<widget font="Regular;30" halign="left" valign="center" name="key_red" position="105,997" size="330,39" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+		<widget font="Regular;30" halign="left" valign="center" name="key_green" position="480,997" size="330,39" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+		<widget font="Regular;30" halign="left" valign="center" name="key_yellow" position="855,997" size="330,39" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="1" />
+		<widget font="Regular;30" halign="left" valign="center" name="key_blue" position="1230,997" size="330,39" backgroundColor="KravenIBbg2" foregroundColor="KravenButton" transparent="1" zPosition="2" />
+	<constant-widget name="Colorbuttons"/>
+	<constant-widget name="Background"/>
+	<constant-widget name="MenuOKExit"/>
+  <!--<text="FileCommanderScreen" position="105,0" />-->
+  </screen>
+  <!-- FileCommanderContextMenu -->
+  <screen name="FileCommanderContextMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" >
+	<eLabel text="FileCommanderContextMenu" position="105,18" size="1500,69" backgroundColor="KravenIBbg3" font="Regular2;51" foregroundColor="KravenMFont2" halign="left" valign="center" transparent="1" />
+	<widget backgroundColor="KravenIBbg2" name="menu" font="Regular;32" foregroundColor="KravenFont1" itemHeight="45" position="105,120" size="1062,765" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+	<panel name="Logo2"/>
+     <constant-widget name="Colorbuttons"/>
+     <constant-widget name="MenuOKExit"/>
+     <!--<text="FileCommanderContextMenu" position="105,0" />-->	
+  </screen>
 <!-- plugins -->
