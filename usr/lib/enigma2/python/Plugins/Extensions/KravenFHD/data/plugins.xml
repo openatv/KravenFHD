@@ -2334,7 +2334,7 @@
   <screen name="FileCommanderContextMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" >
 	<eLabel text="FileCommanderContextMenu" position="105,18" size="1500,69" backgroundColor="KravenIBbg3" font="Regular2;51" foregroundColor="KravenMFont2" halign="left" valign="center" transparent="1" />
 	<widget backgroundColor="KravenIBbg2" name="menu" font="Regular;32" foregroundColor="KravenFont1" itemHeight="45" position="105,120" size="1062,765" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
-	<panel name="Logo2"/>
+	<constant-widget name="Logo2"/>
      <constant-widget name="Colorbuttons"/>
      <constant-widget name="MenuOKExit"/>
      <!--<text="FileCommanderContextMenu" position="105,0" />-->	
